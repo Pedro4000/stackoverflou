@@ -9,4 +9,16 @@
 
 ## Projet Stackoverflou laravel
 
-- Pour installer le projet
+- Pour installer le projet 
+- git clone git@github.com:Pedro4000/stackoverflou.git
+- cd /stackoverflou 
+pour rentrer dans le projet
+- composer install 
+pour installer les dependances nécessaire à l'appli
+- cp .env.example .env
+pour créer le .env à partir du .env.example, ensuite on précise les infos qu'il faut dans le .env notamment le nom de la base de donnée, le mdp et le user
+- php artisan migrate:fresh
+pour runner les migrations
+- sudo chgrp -R www-data ./
+- sudo chmod -R 775 ./storage
+pour mettre les bonnes autorisation aux dossiers et on est prêts
